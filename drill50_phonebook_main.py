@@ -29,19 +29,19 @@ class ParentWindow(Frame):
             self.master.minsize(500,300) #This is the height and width in pixels
             self.master.maxsize(500,300) # You will not the size is fixed
             # This CenterWindow method will center our app on the user's screen
-            phonebook_func.center_window(self, 500,300)
+            drill50_phonebook_func.center_window(self, 500,300)
             # This is the title
             self.master.title("The Tkinter Phonebook Demo")
             # This is the background color
             self.master.configure(bg="#F0F0F0")
             # This protocol method is a tkinter built-in method to catch if
             # the user clicks the upper corner, "X" on Windows OS.
-            self.master.protocol("WM_DELETE_WINDOW", lambda: phonebook_func.ask_quit(self))
+            self.master.protocol("WM_DELETE_WINDOW", lambda:drill50_phonebook_func.ask_quit(self))
             arg = self.master
 
             # load in the GUI widgets from a seperate module,
             # keeping your code comparmentalized and clutter free
-            phonebook_gui.load_gui(self)
+            drill50_phonebook_gui.load_gui(self)
 
 
 

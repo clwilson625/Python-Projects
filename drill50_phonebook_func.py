@@ -62,7 +62,7 @@ def create_db(self):
 
 
 def first_run(self):
-      data = ('John', 'Doe', 'John Doe', '111-111-1111', 'jdoe@email.com')
+    data = ('John', 'Doe', 'John Doe', '111-111-1111', 'jdoe@email.com')
     conn = sqlite3.connect('db_phonebook.db')
     with conn:
         cur = conn.cursor()
