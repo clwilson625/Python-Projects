@@ -18,7 +18,7 @@ import drill50_phonebook_func
 # Frame is the Tkinter frame class that our own class will inherit from
 # This section is defining a class and mountin a frame - primary Tkinter
 
-class ParentWindows(Frame):
+class ParentWindow(Frame):
       def __init__(self, master, *args, **kwargs):
             Frame.__init__(self, master, *args, **kwargs)
 
